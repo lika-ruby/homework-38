@@ -1,0 +1,226 @@
+.footer {
+    background-color: $background-accent-color;
+    padding: 60px 0;
+    overflow: hidden;
+
+    &__container {
+        @include flexbox();
+        gap: 60px;
+
+        @media screen and (min-width: 768px) {
+            gap: 60px 165px;
+            align-items: flex-start;
+        }
+
+        @media screen and (min-width: 1200px) {
+            gap: 93px;
+        }
+    }
+
+    &__addressing {
+        @include flexbox();
+        flex-direction: column;
+
+        @media screen and (min-width: 1200px) {
+            display: block;
+            }
+    }
+
+    &__logo {
+        @include logo();
+
+        &__accent--footer {
+            @include logo($logo-color: $second-accent-color);
+        }
+    }
+
+    &__list {
+        @include flexbox();
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 20px;
+
+        @media screen and (min-width: 1200px) {
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 9px;
+        }
+    }
+
+    &__map {
+        color: $second-accent-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.71;
+        letter-spacing: 0.42px;
+        font-style: normal;
+        text-align: center;
+    }
+
+    &__connection {
+        color: $address-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.71;
+        letter-spacing: 0.42px;
+        font-style: normal;
+        text-align: center;
+    }
+
+    &__icon {
+
+        @media screen and (min-width: 768px) {
+                padding-top: 5px;
+            }
+
+        @media screen and (min-width: 1200px) {
+            padding-top: 12px;
+        }
+    }
+
+    &__title {
+        color: $second-accent-color;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        text-align: center;
+
+        @media screen and (min-width: 1200px) {
+                text-align: left;
+            }
+    }
+
+    &__icons {
+        @include flexbox();
+        gap: 10px;
+    }
+
+    &__link {
+        width: 44px;
+        height: 44px;
+        background-color: $footer-icons-bg;
+        border-radius: 50%;
+        @include flexbox();
+        transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+        &:hover,
+        &:focus {
+            background-color: $accent-color;
+        }
+    }
+
+
+
+    &__svg {
+        fill: $second-accent-color;
+    }
+
+    &__form {
+        width: 100%;
+
+        @media screen and (min-width: 768px) {
+            max-width: 450px;
+            }
+
+                        @media screen and (min-width: 1200px) {
+                            max-width: 570px;
+                            padding-top: 12px;
+                        }
+    }
+
+    &__call {
+        color: $second-accent-color;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        text-align: center;
+
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+            }
+    }
+
+    &__structure {
+        @include flexbox();
+        gap: 20px;
+        flex-direction: column;
+        width: 100%;
+
+        @media screen and (min-width: 1200px) {
+            gap: 12px;
+            flex-direction: row;
+        }
+    }
+
+    &__input {
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background: rgba(33, 150, 243, 0.01);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        padding: 15px 16px;
+        width: 100%;
+        display: block;
+        color: $second-accent-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.25;
+        letter-spacing: 0.48px;
+        transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+        @media screen and (min-width: 1200px) {
+            width: 358px;
+            }
+
+        &:hover,
+        &:focus {
+            border-color: $accent-color;
+        }
+
+        &::placeholder {
+            color: $address-color;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.25;
+            letter-spacing: 0.48px;
+        }
+    }
+
+
+
+    &__btn {
+        color: $second-accent-color;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.87;
+        letter-spacing: 0.96px;
+        padding: 10px 28px 10px 31px;
+        background-color: $accent-color;
+        @include flexbox();
+        gap: 10px;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+        @media screen and (min-width: 1200px) {
+        padding: 10px 28px;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $hover;
+        }
+    }
+
+
+
+    &__badge {
+        fill: $second-accent-color;
+    }
+
+
+}

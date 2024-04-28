@@ -1,0 +1,105 @@
+.hero__padding {
+    height: 60px;
+    overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+        height: 80px;
+    }
+}
+
+.hero {
+    padding: 118px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../img/mobile/hero/hero-background@1x-mobile.webp);
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../img/mobile/hero/hero-background@2x-mobile.webp);
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../img/tablet/hero/hero-background@1x-tablet.webp);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../img/tablet/hero/hero-background@2x-tablet.webp);
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 200px 0;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../img/desktop/hero/hero-background@1x-desktop.webp);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../img/desktop/hero/hero-background@2x-desktop.webp);
+        }
+    }
+
+    &__container {
+        @include flexbox();
+        flex-direction: column;
+    }
+
+    &__title {
+        color: $second-accent-color;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.62;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        text-align: center;
+        max-width: 360px;
+        animation-name: title-move;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        margin-bottom: 30px;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 44px;
+            line-height: 1.36;
+            letter-spacing: 2.64px;
+            max-width: 696px;
+            margin-bottom: 40px;
+        }
+    }
+
+
+
+    &__button {
+        @include button();
+        animation-name: btn-move;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+
+        @media screen and (min-width: 1200px) {
+            padding: 10px 32px;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $hover;
+        }
+    }
+
+}

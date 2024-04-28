@@ -1,0 +1,96 @@
+.team {
+    background: $background-team-color;
+    padding: 60px 0;
+    overflow: hidden;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+        padding: 94px 0;
+    }
+
+    &__list {
+        @include flexbox();
+        gap: 30px;
+    }
+
+    &__item {
+        border-radius: 0px 0px 4px 4px;
+        background: $background-color;
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+            0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        width: 450px;
+        padding-bottom: 24px;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__photo {
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        @extend %title;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__subtitle {
+        color: $title-color;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.48px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    &__desc {
+        color: $text-color;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.48px;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    &__icons {
+        @include flexbox();
+        gap: 10px;
+    }
+
+    &__link {
+        width: 44px;
+        height: 44px;
+        @include flexbox();
+        border-radius: 50%;
+        transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+        &:hover,
+        &:focus {
+            background-color: $accent-color;
+        }
+    }
+
+    &__svg {
+        fill: $icon-fill;
+        transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    }
+
+    &__link:hover &__svg {
+        fill: $second-accent-color;
+    }
+
+    &__link:focus &__svg {
+        fill: $second-accent-color;
+    }
+
+}

@@ -1,0 +1,13 @@
+*::selection {
+    background-color: $accent-color;
+    color: $second-accent-color;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Roboto;
+    position: relative;
+}

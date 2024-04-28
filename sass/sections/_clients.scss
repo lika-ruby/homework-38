@@ -1,0 +1,68 @@
+.client {
+    padding: 60px 0;
+    overflow: hidden;
+
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+    }
+
+    &__title {
+        @extend %title;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__list {
+        @include flexbox();
+        gap: 30px;
+        width: 100%;
+    }
+
+    &__item {
+        width: calc((100% - 30px) / 2);
+
+        @media screen and (min-width: 768px) {
+                width: 226px;
+            }
+        
+            @media screen and (min-width: 1200px) {
+                width: 170px;
+            }
+    }
+
+    &__link {
+        display: block;
+        width: 100%;
+         //   max-width: 100%;
+        height: 92px;
+        @include flexbox();
+        border-radius: 4px;
+        border: 1px solid $icon-fill;
+        transition: border cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+        &:hover,
+        &:focus {
+            border: 1px solid $accent-color;
+        }
+    }
+
+    &__link:hover &__icon {
+        fill: $accent-color;
+    }
+
+    &__link:focus &__icon {
+        fill: $accent-color;
+    }
+
+    &__icon {
+        fill: $icon-fill;
+        transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+        &:hover {
+            fill: $accent-color;
+        }
+    }
+}

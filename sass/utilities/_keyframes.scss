@@ -1,0 +1,55 @@
+@keyframes link-after-movement {
+    0% {
+        transform: translate(0, -5px);
+    }
+
+    50% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, -5px);
+    }
+}
+
+@keyframes title-move {
+    0% {
+        transform: translate(400px, -100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes btn-move {
+    0% {
+        transform: translate(-400px, 100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes scroll-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    33% {
+        transform: rotate(360deg);
+    }
+
+    66% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
