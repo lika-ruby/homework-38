@@ -156,11 +156,20 @@
           <ul class="doing__list">
             <li data-aos="zoom-in-down">
               <a href="#" class="doing__link">
-                <img
-                  class="doing__photo"
-                  src="./img/doing/photo-1.jpg"
-                  alt="Чоловік пише код"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/desktop/doing/doing-1@1x-desktop.webp 1x,
+                      ./img/desktop/doing/doing-1@2x-desktop.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="doing__img"
+                    class="Чоловік пише код"
+                    src="./img/desktop/doing/doing-1@1x-desktop.webp"
+                  />
+                </picture>
                 <div class="doing__overlay">
                   <h3 class="doing__subtitle">Десктопні додатки</h3>
                 </div>
@@ -168,11 +177,20 @@
             </li>
             <li data-aos="zoom-in-up">
               <a href="#" class="doing__link">
-                <img
-                  class="doing__photo"
-                  src="./img/doing/photo-2.jpg"
-                  alt="Жінка вибирає дизайн"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/desktop/doing/doing-2@1x-desktop.webp 1x,
+                      ./img/desktop/doing/doing-2@2x-desktop.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="doing__img"
+                    class="Жінка вибирає дизайн"
+                    src="./img/desktop/doing/doing-2@1x-desktop.webp"
+                  />
+                </picture>
                 <div class="doing__overlay">
                   <h3 class="doing__subtitle">Мобільні додатки</h3>
                 </div>
@@ -180,11 +198,20 @@
             </li>
             <li data-aos="zoom-in-down">
               <a href="#" class="doing__link">
-                <img
-                  class="doing__photo"
-                  src="./img/doing/photo-3.jpg"
-                  alt="Жінка вибирає колір"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/desktop/doing/doing-3@1x-desktop.webp 1x,
+                      ./img/desktop/doing/doing-3@2x-desktop.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="doing__img"
+                    class="Жінка вибирає колір"
+                    src="./img/desktop/doing/doing-3@1x-desktop.webp"
+                  />
+                </picture>
                 <div class="doing__overlay">
                   <h3 class="doing__subtitle">Дизайнерські рішення</h3>
                 </div>
@@ -199,12 +226,34 @@
           <h2 class="team__title" data-aos="zoom-in-up">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item" data-aos="fade-up-right">
-              <img
-                class="team__photo"
-                width="270"
-                src="./img/team/person-1.jpg"
-                alt="Чоловік з бородою з каштановим волоссям в окулярах в бордовій сорочці"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/desktop/team/person-1@1x-desktop.webp 1x,
+                    ./img/desktop/team/person-1@2x-desktop.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/tablet/team/person-1@1x-tablet.webp 1x,
+                    ./img/tablet/team/person-1@2x-tablet.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/mobile/team/person-1@1x-mobile.webp 1x,
+                    ./img/mobile/team/person-1@2x-mobile.webp 2x
+                  "
+                  media="(min-width: 767px)"
+                />
+                <img
+                  class="team__photo"
+                  alt="Чоловік з бородою з каштановим волоссям в окулярах в бордовій сорочці"
+                  src="./img/mobile/team/person-1@1x-mobile.webp"
+                />
+              </picture>
               <h3 class="team__subtitle">Ігор Дем'яненко</h3>
               <p class="team__desc">Product Designer</p>
               <ul class="team__icons">
@@ -255,12 +304,34 @@
               </ul>
             </li>
             <li class="team__item" data-aos="fade-up">
-              <img
-                class="team__photo"
-                width="270"
-                src="./img/team/person-2.jpg"
-                alt="Жінка з окулярами в чорному піджаку та світлим волоссям"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/desktop/team/person-2@1x-desktop.webp 1x,
+                    ./img/desktop/team/person-2@2x-desktop.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/tablet/team/person-2@1x-tablet.webp 1x,
+                    ./img/tablet/team/person-2@2x-tablet.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/mobile/team/person-2@1x-mobile.webp 1x,
+                    ./img/mobile/team/person-2@2x-mobile.webp 2x
+                  "
+                  media="(min-width: 767px)"
+                />
+                <img
+                  class="team__photo"
+                  alt="Жінка з окулярами в чорному піджаку та світлим волоссям"
+                  src="./img/mobile/team/person-2@1x-mobile.webp"
+                />
+              </picture>
               <h3 class="team__subtitle">Ольга Рєпіна</h3>
               <p class="team__desc">Frontend Developer</p>
               <ul class="team__icons">
@@ -311,12 +382,34 @@
               </ul>
             </li>
             <li class="team__item" data-aos="fade-up">
-              <img
-                class="team__photo"
-                width="270"
-                src="./img/team/person-3.jpg"
-                alt="Чоловік з бородою з каштановим волоссям в блакитній сорочці"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/desktop/team/person-3@1x-desktop.webp 1x,
+                    ./img/desktop/team/person-3@2x-desktop.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/tablet/team/person-3@1x-tablet.webp 1x,
+                    ./img/tablet/team/person-3@2x-tablet.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/mobile/team/person-3@1x-mobile.webp 1x,
+                    ./img/mobile/team/person-3@2x-mobile.webp 2x
+                  "
+                  media="(min-width: 767px)"
+                />
+                <img
+                  class="team__photo"
+                  alt="Чоловік з бородою з каштановим волоссям в блакитній сорочці"
+                  src="./img/mobile/team/person-3@1x-mobile.webp"
+                />
+              </picture>
               <h3 class="team__subtitle">Микола Тарасов</h3>
               <p class="team__desc">Marketing</p>
               <ul class="team__icons">
@@ -367,12 +460,34 @@
               </ul>
             </li>
             <li class="team__item" data-aos="fade-up-left">
-              <img
-                class="team__photo"
-                width="270"
-                src="./img/team/person-4.jpg"
-                alt="Чоловік в окулярах з темними бородою та волоссям в чорний футболці"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/desktop/team/person-4@1x-desktop.webp 1x,
+                    ./img/desktop/team/person-4@2x-desktop.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/tablet/team/person-4@1x-tablet.webp 1x,
+                    ./img/tablet/team/person-4@2x-tablet.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/mobile/team/person-4@1x-mobile.webp 1x,
+                    ./img/mobile/team/person-4@2x-mobile.webp 2x
+                  "
+                  media="(min-width: 767px)"
+                />
+                <img
+                  class="team__photo"
+                  alt="Чоловік в окулярах з темними бородою та волоссям в чорний футболці"
+                  src="./img/mobile/team/person-4@1x-mobile.webp"
+                />
+              </picture>
               <h3 class="team__subtitle">Михайло Єрмаков</h3>
               <p class="team__desc">UI Designer</p>
               <ul class="team__icons">
